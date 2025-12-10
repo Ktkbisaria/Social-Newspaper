@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', 'Baskerville', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, input {
+  transition: all 0.2s ease;
+}
+
+/* Prevent text selection on UI elements */
+button {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #1a1a1a;
+  outline-offset: 2px;
+}
+
