@@ -102,7 +102,6 @@ export default function NewspaperAppWireframe() {
     }
   };
 
-<<<<<<< HEAD
   const handleBookmark = (e, postId) => {
     e.stopPropagation();
     setBookmarkedPosts(prev => {
@@ -382,7 +381,6 @@ export default function NewspaperAppWireframe() {
               key={post.id}
               onClick={() => openPost(post)}
               style={{
-<<<<<<< HEAD
                 backgroundColor: theme.cardBg,
                 padding: '28px',
                 cursor: 'pointer',
@@ -514,7 +512,6 @@ export default function NewspaperAppWireframe() {
                   {post.headline}
                 </h3>
               </div>
-<<<<<<< HEAD
 
               {/* Reactions Bar */}
               <div style={{
@@ -698,7 +695,6 @@ export default function NewspaperAppWireframe() {
                     size={16} 
                     strokeWidth={2.5}
                     style={{
-<<<<<<< HEAD
                       color: upvotedPosts.has(post.id) ? theme.accent : theme.textSecondary,
                       transform: upvotedPosts.has(post.id) ? 'scale(1.1)' : 'scale(1)',
                       transition: 'all 0.2s ease'
@@ -846,7 +842,6 @@ export default function NewspaperAppWireframe() {
               flex: 1,
               padding: '8px 0'
             }}>
-<<<<<<< HEAD
               {filteredConnections.length > 0 ? (
                 filteredConnections.map((name, idx) => {
                   const avatar = getAuthorAvatar(name);
@@ -999,7 +994,6 @@ export default function NewspaperAppWireframe() {
                 BACK TO GRID
               </p>
             </div>
-<<<<<<< HEAD
             <button
               onClick={(e) => handleBookmark(e, selectedPost.id)}
               style={{
@@ -1213,7 +1207,6 @@ export default function NewspaperAppWireframe() {
                 orem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
               
-<<<<<<< HEAD
               <p style={{ marginBottom: '24px', color: theme.text }}>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
               </p>
@@ -1366,7 +1359,6 @@ export default function NewspaperAppWireframe() {
                   fontSize: '13px', 
                   fontFamily: 'Georgia, serif',
                   fontWeight: '600',
-<<<<<<< HEAD
                   color: theme.textSecondary,
                   transition: 'color 0.3s ease'
                 }}>
